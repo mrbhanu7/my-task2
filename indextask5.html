@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fake Store API</title>
+
+  <link rel="task5" href="style.css">
+</head>
+
+<body>
+
+  <h1>Fake Store Products</h1>
+
+ 
+  <div class="controls">
+
+    
+    <input 
+      type="text" 
+      id="searchInput" 
+      placeholder="Search products..."
+    >
+
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+    </select>
+
+    
+    <select id="sortPrice">
+      <option value="">Sort By Price</option>
+      <option value="low-high">Low → High</option>
+      <option value="high-low">High → Low</option>
+    </select>
+
+  </div>
+
+  
+  <div id="loading">Loading...</div>
+
+
+  <div id="error"></div>
+
+ 
+  <div class="products-container" id="productsContainer"></div>
+
+  <script src="task5.js"></script>
+
+</body>
+</html>
